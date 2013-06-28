@@ -13,7 +13,7 @@ module EdiParser
     context "parse invalid ocurrence EDI file" do
       let(:line) { get_line(filename: "OCOR_invalid.txt") }
 
-      it "raise InvalidInterchangeHeaderError" do
+      it "raise InvalidDocumentHeaderError" do
         expect { DocumentHeader.parse(line) }.to raise_error(InvalidDocumentHeaderError)
       end
     end
@@ -21,7 +21,7 @@ module EdiParser
     context "parse valid ocurrence EDI file" do
       let(:line) { get_line(filename: "OCOR_valid.txt", line_number: 2) }
 
-      it "parse the interchange header" do
+      it "parse the document header" do
         document_header = DocumentHeader.parse(line)
         document_header.document_id.should == "OCORR070611053"
       end
@@ -30,7 +30,7 @@ module EdiParser
     context "parse valid ONTIME ocurrence EDI file" do
       let(:line) { get_line(filename: "OCOR_ONTIME_valid.txt", line_number: 2) }
 
-      it "parse the interchange header" do
+      it "parse the document header" do
         document_header = DocumentHeader.parse(line)
         document_header.document_id.should == "240520131406OCOR1_ONTIME"
       end
