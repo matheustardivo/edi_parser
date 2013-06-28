@@ -7,5 +7,11 @@ module EdiParser
         __send__("#{key}=", value)
       end
     end
+
+    def self.parse(line)
+      raise InvalidInterchangeHeaderError, "Line #{line} doesn't begin with 000 header (CABECALHO DE INTERCAMBIO)" unless line.start_with?("000")
+    end
   end
+
+  class InvalidInterchangeHeaderError < StandardError; end
 end
