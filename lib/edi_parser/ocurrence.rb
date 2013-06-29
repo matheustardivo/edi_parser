@@ -26,7 +26,7 @@ module EdiParser
     end
 
     def self.parse(line)
-      return nil unless line.starts_with?("342")
+      return nil unless line.start_with?("342")
 
       ocurrence = Ocurrence.new
       ocurrence.sender_cnpj = line[3..16]

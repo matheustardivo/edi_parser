@@ -1,12 +1,12 @@
-require 'coveralls'
+require "coveralls"
 Coveralls.wear!
 
-ENV["RAILS_ENV"] = "test"
+require "bundler"
 
-require "rails"
+Bundler.setup(:default, :development)
+Bundler.require
+
 require "edi_parser"
-require "support/config/boot"
-require "rspec/rails"
 
 Rspec.configure do |config|
   config.include Module.new {
