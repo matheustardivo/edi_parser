@@ -1,6 +1,11 @@
 module EdiParser
   class Invoice
-    attr_accessor :number, :series
+
+    # @return [Integer] the invoice number.
+    attr_accessor :number
+
+    # @return [String] the invoice series.
+    attr_accessor :series
 
     def initialize(attributes = {})
       attributes.each do |key, value|

@@ -1,6 +1,23 @@
 module EdiParser
   class Ocurrence
-    attr_accessor :sender_cnpj, :invoice, :code, :date, :incoming_code, :geoposition
+
+    # @return [String] the sender's cnpj.
+    attr_accessor :sender_cnpj
+
+    # @return [EdiParser::Invoice] the invoice object.
+    attr_accessor :invoice
+
+    # @return [String] the ocurrence code.
+    attr_accessor :code
+
+    # @return [DateTime] the ocurrence date and time.
+    attr_accessor :date
+
+    # @return [String] the ocurrence incoming code.
+    attr_accessor :incoming_code
+
+    # @return [String] the ocurrence textual geoposition.
+    attr_accessor :geoposition
 
     def initialize(attributes = {})
       attributes.each do |key, value|

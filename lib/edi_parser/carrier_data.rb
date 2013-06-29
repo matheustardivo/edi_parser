@@ -1,6 +1,11 @@
 module EdiParser
   class CarrierData
-    attr_accessor :cnpj, :corporate_name
+
+    # @return [String] the carrier cnpj.
+    attr_accessor :cnpj
+
+    # @return [String] the carrier corporate name.
+    attr_accessor :corporate_name
 
     def initialize(attributes = {})
       attributes.each do |key, value|

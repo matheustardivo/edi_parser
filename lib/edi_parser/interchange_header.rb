@@ -1,6 +1,17 @@
 module EdiParser
   class InterchangeHeader
-    attr_accessor :carrier_name, :receiver_name, :processing_date, :name
+
+    # @return [String] the carrier name.
+    attr_accessor :carrier_name
+
+    # @return [String] the receiver name.
+    attr_accessor :receiver_name
+
+    # @return [DateTime] the processing date and time.
+    attr_accessor :processing_date
+
+    # @return [String] interchange header name.
+    attr_accessor :name
 
     def initialize(attributes = {})
       attributes.each do |key, value|

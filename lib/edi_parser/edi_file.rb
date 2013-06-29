@@ -1,6 +1,17 @@
 module EdiParser
   class EdiFile
-    attr_accessor :interchange_header, :document_header, :carrier_data, :ocurrences
+
+    # @return [EdiParser::InterchangeHeader] the parsed interchange header object.
+    attr_accessor :interchange_header
+
+    # @return [EdiParser::DocumentHeader] the parsed document header object.
+    attr_accessor :document_header
+
+    # @return [EdiParser::CarrierData] the parsed carrier data object.
+    attr_accessor :carrier_data
+
+    # @return [Array<EdiParser::Ocurrence>] the array of parse ocurrences object.
+    attr_accessor :ocurrences
 
     def initialize(attributes = {})
       attributes.each do |key, value|

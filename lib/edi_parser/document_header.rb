@@ -1,5 +1,7 @@
 module EdiParser
   class DocumentHeader
+
+    # @return [String] the document header identifier.
     attr_accessor :document_id
 
     def initialize(id)
