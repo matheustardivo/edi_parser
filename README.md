@@ -1,29 +1,21 @@
 # EdiParser
 
-TODO: Write a gem description
+Biblioteca para fazer o parse de arquivos de ocorrências de entrega conforme o [padrão EDI COTIN/SETCESP](http://www.setcesp.org.br/cotin/index.asp).
 
-## Installation
+Aqui você encontra a planilha com o layout do arquivo de ocorrências: http://www.setcesp.org.br/cotin/OCORENC.XLS
 
-Add this line to your application's Gemfile:
+## Como usar
 
-    gem 'edi_parser'
+### Instalação
 
-And then execute:
+Adicione a biblioteca ao arquivo Gemfile:
 
-    $ bundle
+```ruby
+gem 'edi_parser'
+```
 
-Or install it yourself as:
+### Fazendo o parse dos seus arquivos de ocorrência
 
-    $ gem install edi_parser
-
-## Usage
-
-TODO: Write usage instructions here
-
-## Contributing
-
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+```ruby
+@edi_file = EdiParser::EdiFile.parse(path_para_seu_arquivo)
+```
