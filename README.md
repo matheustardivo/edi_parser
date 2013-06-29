@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/matheustardivo/edi_parser.png?branch=master)](https://travis-ci.org/matheustardivo/edi_parser)
+[![Coverage Status](https://coveralls.io/repos/matheustardivo/edi_parser/badge.png)](https://coveralls.io/r/matheustardivo/edi_parser)
+
 # EdiParser
 
 Biblioteca para fazer o parse de arquivos de ocorrências de entrega conforme o [padrão EDI COTIN/SETCESP](http://www.setcesp.org.br/cotin/index.asp).
