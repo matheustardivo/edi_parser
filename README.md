@@ -19,3 +19,13 @@ gem 'edi_parser'
 ```ruby
 @edi_file = EdiParser::EdiFile.parse(path_para_seu_arquivo)
 ```
+
+### Documentação
+
+Veja no [RubyDoc.info](http://rubydoc.info) em: http://rubydoc.info/github/matheustardivo/edi_parser/master/frames
+
+As principais classes são:
+* [EdiParser::EdiFile](http://rubydoc.info/github/matheustardivo/edi_parser/master/EdiParser/EdiFile)
+* [EdiParser::InterchangeHeader](http://rubydoc.info/github/matheustardivo/edi_parser/master/EdiParser/InterchangeHeader)
+* [EdiParser::DocumentHeader](http://rubydoc.info/github/matheustardivo/edi_parser/master/EdiParser/DocumentHeader)
+* [EdiParser::CarrierData](http://rubydoc.info/github/matheustardivo/edi_parser/master/EdiParser/CarrierData)
