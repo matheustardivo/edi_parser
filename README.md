@@ -1,8 +1,4 @@
-[![Build Status](https://travis-ci.org/matheustardivo/edi_parser.png?branch=master)](https://travis-ci.org/matheustardivo/edi_parser)
-[![Code Climate](https://codeclimate.com/github/matheustardivo/edi_parser.png)](https://codeclimate.com/github/matheustardivo/edi_parser)
-[![Coverage Status](https://coveralls.io/repos/matheustardivo/edi_parser/badge.png)](https://coveralls.io/r/matheustardivo/edi_parser)
-
-# EdiParser
+# EdiParser [![Build Status](https://travis-ci.org/matheustardivo/edi_parser.png?branch=master)](https://travis-ci.org/matheustardivo/edi_parser) [![Code Climate](https://codeclimate.com/github/matheustardivo/edi_parser.png)](https://codeclimate.com/github/matheustardivo/edi_parser) [![Coverage Status](https://coveralls.io/repos/matheustardivo/edi_parser/badge.png)](https://coveralls.io/r/matheustardivo/edi_parser)
 
 Biblioteca para fazer o parse de arquivos de ocorrências de entrega conforme o [padrão EDI COTIN/SETCESP](http://www.setcesp.org.br/cotin/index.asp).
 
